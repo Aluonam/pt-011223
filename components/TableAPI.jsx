@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import AntModal from './AntModal'
 
 const TableAPI = () => {
 
@@ -22,7 +23,7 @@ const TableAPI = () => {
             <tr>
                 <th>{oneDate.id}</th>
                 <th>{oneDate.title}</th>
-                <th>{oneDate.body}</th>
+                <th><AntModal></AntModal></th>
             </tr>
         )
     })
@@ -34,7 +35,9 @@ const TableAPI = () => {
                 <th>Id</th>
                 <th>Title</th>
                 <th>Body</th>
-            </tr>
+            </tr> 
+
+
         </thead>
         <tbody>
             {tableData}
