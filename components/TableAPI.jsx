@@ -20,20 +20,20 @@ const TableAPI = () => {
     const tableData = dataAPI.map((oneDate)=>{
         return(
             <tr>
-                <td>{oneDate.id}</td>
-                <td>{oneDate.title}</td>
-                <td>{oneDate.body}</td>
+                <th>{oneDate.id}</th>
+                <th>{oneDate.title}</th>
+                <th>{oneDate.body}</th>
             </tr>
         )
     })
   return (
     <>
-    <table>
+    <table style={{ border: "1px solid black"}}>
         <thead>
             <tr>
-                <td>Id</td>
-                <td>Title</td>
-                <td>Body</td>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
             </tr>
         </thead>
         <tbody>
