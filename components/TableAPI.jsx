@@ -17,7 +17,15 @@ const TableAPI = () => {
     }, [])
     
 
-
+    const tableData = dataAPI.map((oneDate)=>{
+        return(
+            <tr>
+                <td>{oneDate.id}</td>
+                <td>{oneDate.title}</td>
+                <td>{oneDate.body}</td>
+            </tr>
+        )
+    })
   return (
     <>
     <table>
@@ -29,11 +37,7 @@ const TableAPI = () => {
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
+            {tableData}
         </tbody>
     </table>
     </>
