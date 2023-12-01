@@ -15,9 +15,9 @@ const AntModal = ({infoModal}) => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Body text
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <Modal title="Body text" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <p>{infoModal}</p>
       </Modal>
     </>
