@@ -23,7 +23,7 @@ const TableAPI = () => {
             <tr>
                 <th>{oneDate.id}</th>
                 <th>{oneDate.title}</th>
-                <th><AntModal></AntModal></th>
+                <th><AntModal infoModal={oneDate.body}></AntModal></th>
             </tr>
         )
     })
